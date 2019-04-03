@@ -21,16 +21,6 @@
 
 @implementation SecondTabbarController
 
-- (instancetype)initBool:(BOOL)leftBool;
-{
-    self = [super init];
-    if (self) {
-        _leftBool = leftBool;
-        [self customizeTabBarAppearance];
-    }
-    return self;
-}
-
 - (instancetype)init{
     self = [super init];
     if (self) {

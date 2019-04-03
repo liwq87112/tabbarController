@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondTabbarController : UITabBarController
 
-@property (nonatomic, assign) BOOL leftBool;
-- (instancetype)initBool:(BOOL)leftBool;
 @end
 
 NS_ASSUME_NONNULL_END

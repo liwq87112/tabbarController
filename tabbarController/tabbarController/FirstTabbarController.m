@@ -49,8 +49,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-   
-    
     [self setupAllChirldVc];
     
 }
@@ -58,7 +56,6 @@
 - (void)setupAllChirldVc{
     
     [self setupChirlVC:[OneViewController new] withTitle:@"one" normalImage:[self imageWithString:@""] selectImage:[self imageWithString:@""]];
-
 
 }
 

@@ -12,12 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ThreeViewController : UIViewController
 
-/** 第一个tabbar YES*/
-@property (nonatomic, assign) BOOL tabbarBool;
-
-/** 左滑 */
-@property (nonatomic, assign) BOOL leftBool;
-
 @end
 
 NS_ASSUME_NONNULL_END
