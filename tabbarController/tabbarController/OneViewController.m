@@ -18,12 +18,12 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 
@@ -63,7 +63,7 @@
     if (indexPath.row == 0) {
         SecondTabbarController *tabbarVC = [[SecondTabbarController alloc] init];
         [self.navigationController pushViewController:tabbarVC animated:YES];
-        [self.navigationController setNavigationBarHidden:YES animated:NO];
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
     }else{
         ThirdTabbarController *tabbarVC = [[ThirdTabbarController alloc] init];
         [self.view.window setRootViewController:tabbarVC];

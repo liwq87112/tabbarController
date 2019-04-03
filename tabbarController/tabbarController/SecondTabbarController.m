@@ -52,9 +52,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    NSLog(@"---%d",_leftBool);
-    
+
     [self setupAllChirldVc];
     
 }
