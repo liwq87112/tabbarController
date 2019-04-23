@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F6AC89B226EF8DB00B99CAA /* MMTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6AC89A226EF8DB00B99CAA /* MMTabbar.m */; };
 		6FF38615225457750048A776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF38614225457750048A776 /* AppDelegate.m */; };
 		6FF3861B225457750048A776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF38619225457750048A776 /* Main.storyboard */; };
 		6FF3861E225457750048A776 /* tabbarController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3861C225457750048A776 /* tabbarController.xcdatamodeld */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F6AC899226EF8DB00B99CAA /* MMTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabbar.h; sourceTree = "<group>"; };
+		6F6AC89A226EF8DB00B99CAA /* MMTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTabbar.m; sourceTree = "<group>"; };
 		6FF38610225457750048A776 /* tabbarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabbarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF38613225457750048A776 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FF38614225457750048A776 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 			children = (
 				6FF38613225457750048A776 /* AppDelegate.h */,
 				6FF38614225457750048A776 /* AppDelegate.m */,
+				6F6AC899226EF8DB00B99CAA /* MMTabbar.h */,
+				6F6AC89A226EF8DB00B99CAA /* MMTabbar.m */,
 				6FF3862C225457990048A776 /* OneViewController.h */,
 				6FF3862D225457990048A776 /* OneViewController.m */,
 				6FF3862F225457A10048A776 /* TwoViewController.h */,
@@ -190,6 +195,7 @@
 				6FF3863A225457F40048A776 /* SecondTabbarController.m in Sources */,
 				6FF386262254577A0048A776 /* main.m in Sources */,
 				6FF3861E225457750048A776 /* tabbarController.xcdatamodeld in Sources */,
+				6F6AC89B226EF8DB00B99CAA /* MMTabbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

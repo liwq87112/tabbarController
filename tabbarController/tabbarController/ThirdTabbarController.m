@@ -64,6 +64,7 @@
     FourViewController *four = [FourViewController new];
     [self setupChirlVC:four withTitle:@"four" normalImage:[self imageWithString:@""] selectImage:[self imageWithString:@""]];
 
+
 }
 
 - (void)setupChirlVC:(UIViewController *)vc withTitle:(NSString *)title normalImage:(UIImage *)normaImage selectImage:(UIImage *)selectImage{

@@ -13,6 +13,8 @@
 
 #import "MainNavgationController.h"
 
+#import "MMTabbar.h"
+
 @interface SecondTabbarController ()
 
 
@@ -52,9 +54,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    
     [self setupAllChirldVc];
     
+    [self setCustomtabbar];
 }
 
 - (void)setupAllChirldVc{
@@ -62,10 +65,26 @@
     TwoViewController *two = [TwoViewController new];
     [self setupChirlVC:two withTitle:@"two" normalImage:[self imageWithString:@""] selectImage:[self imageWithString:@""]];
     
+    [self setupChirlVC:[UIViewController new] withTitle:@"" normalImage:[self imageWithString:@""] selectImage:[self imageWithString:@""]];//备用
+    
     ThreeViewController *three = [ThreeViewController new];
     [self setupChirlVC:three withTitle:@"three" normalImage:[self imageWithString:@""] selectImage:[self imageWithString:@""]];
    
 }
+
+- (void)setCustomtabbar{
+    MMTabbar *tabbar = [[MMTabbar alloc]init];
+    [self setValue:tabbar forKeyPath:@"tabBar"];
+    [tabbar.centerBtn addTarget:self action:@selector(centerBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)centerBtnClick:(UIButton *)btn{
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"点击了" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+}
+
+
 
 - (void)setupChirlVC:(UIViewController *)vc withTitle:(NSString *)title normalImage:(UIImage *)normaImage selectImage:(UIImage *)selectImage{
     

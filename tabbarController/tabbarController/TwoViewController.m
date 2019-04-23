@@ -29,7 +29,9 @@
     [self.tabBarController.navigationController popViewControllerAnimated:YES];
 }
 
-
+//NSInteger count = self.viewControllers.count;
+//self.selectedIndex = count/2;//关联中间按钮
+//[self tabBarController:self didSelectViewController:self.viewControllers[self.selectedIndex]];
 
 /*
 #pragma mark - Navigation
